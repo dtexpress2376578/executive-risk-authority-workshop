@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Executive Risk Authority — a four-day live working session for risk leaders ready to become trusted executive advisors.">
+  <title>Executive Risk Authority | 4-Day Live Working Session</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://js.whop.com" crossorigin>
+  <link rel="preconnect" href="https://whop.com" crossorigin>
+  <link rel="preload" href="https://js.whop.com/static/checkout/loader.js" as="script" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --navy:#0a1929; --ink:#1a2332; --paper:#f7f9fc; --cream:#fff; --gold:#f5a623; --gold-dark:#8a5700; --slate:#5a6b7d; --line:#e3e8ef; }
+    * { box-sizing:border-box; margin:0; }
+    html { scroll-behavior:smooth; }
+    body { background:var(--paper); color:var(--ink); font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size:16px; line-height:1.6; }
+    a { color:inherit; text-decoration:none; }
+    a:focus-visible, summary:focus-visible { outline:3px solid var(--gold); outline-offset:4px; }
+    .container { width:min(100% - 40px, 940px); margin:auto; }
+    .announcement { background:var(--gold); color:var(--navy); }
+    .announcement .container { min-height:43px; display:flex; gap:20px; align-items:center; justify-content:center; font-size:12px; font-weight:700; letter-spacing:.02em; }
+    .brand { color:var(--navy); font:800 13px "Inter",sans-serif; letter-spacing:-.02em; white-space:nowrap; }
+    .brand sup { font:8px "Inter",sans-serif; vertical-align:top; margin-left:1px; }
+    .top-detail { white-space:nowrap; }
+    .top-detail + .top-detail { color:var(--navy); }
+    .hero { background:linear-gradient(135deg, var(--navy), #0f2a44); color:#fff; padding:72px 0 80px; position:relative; overflow:hidden; text-align:center; }
+    .hero:after { content:""; position:absolute; inset:0; background:radial-gradient(circle at 80% 0%, rgba(245,166,35,.14), transparent 50%); pointer-events:none; }
+    .hero .container { position:relative; z-index:1; max-width:880px; }
+    .eyebrow { display:inline-block; color:var(--gold); background:rgba(245,166,35,.12); border:1px solid rgba(245,166,35,.32); border-radius:999px; padding:6px 14px; font-size:11px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; margin-bottom:20px; }
+    h1,h2,h3 { font-family:"Inter",sans-serif; line-height:1.1; letter-spacing:-.035em; }
+    h1 { font-size:clamp(42px,6vw,62px); max-width:780px; margin:0 auto; font-weight:800; }
+    h1 .hl { color:var(--gold); }
+    .hero-copy { max-width:700px; color:rgba(255,255,255,.84); font-size:18px; margin:20px auto 22px; }
+    .hero-format { display:inline-block; background:rgba(255,255,255,.05); border:1px solid rgba(245,166,35,.4); border-radius:12px; padding:13px 21px; margin:0 auto 20px; color:#fff; font-size:15px; font-weight:600; }
+    .hero-format span { color:var(--gold); font-size:11px; letter-spacing:.11em; text-transform:uppercase; display:block; margin-bottom:2px; }
+    .hero-trust { display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin:0 auto 29px; color:rgba(255,255,255,.72); font-size:13px; }
+    .hero-trust b { color:#10b981; margin-right:5px; }
+    .button { display:inline-flex; align-items:center; justify-content:center; padding:15px 26px; background:var(--gold); color:var(--navy); font-weight:700; border:0; border-radius:8px; box-shadow:0 6px 20px rgba(245,166,35,.35); transition:.18s ease; }
+    .button:hover { background:#ffb83d; box-shadow:0 10px 28px rgba(245,166,35,.5); transform:translateY(-2px); }
+    .button.alt { background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.25); color:#fff; box-shadow:none; margin-left:11px; }
+    .button.alt:hover { border-color:#fff; background:rgba(255,255,255,.08); }
+    .section { padding:84px 0; border-bottom:1px solid var(--line); }
+    .intro { padding:75px 0 84px; }
+    .intro p { font-size:20px; max-width:680px; }
+    .intro .support { color:var(--slate); font-size:17px; margin:20px 0 29px; }
+    .callout { max-width:710px; padding:20px 25px; background:var(--cream); border-left:4px solid var(--gold); font-size:17px; font-weight:600; line-height:1.6; }
+    .section-label { color:var(--gold-dark); font-size:11px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; margin-bottom:16px; }
+    h2 { font-size:clamp(32px,4vw,47px); font-weight:800; }
+    .agenda { margin-top:35px; }
+    .day { display:grid; grid-template-columns:72px 1fr; gap:18px; padding:29px 0; border-bottom:1px solid var(--line); }
+    .day:first-child { padding-top:0; }
+    .day-number { color:var(--gold-dark); font-size:35px; font-weight:800; }
+    .timing { color:var(--slate); font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; }
+    h3 { font-size:25px; margin:6px 0 7px; font-weight:800; }
+    .day p { color:var(--slate); max-width:630px; }
+    .outcome { display:inline-block; margin-top:13px; color:var(--navy); font-size:13px; font-weight:600; }
+    .who-grid { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start; }
+    .who-grid p { color:var(--slate); margin-top:18px; }
+    .checklist { list-style:none; margin-top:7px; }
+    .checklist li { padding:13px 0 13px 28px; border-bottom:1px solid var(--line); position:relative; }
+    .checklist li:before { content:"+"; position:absolute; left:1px; color:var(--gold-dark); font-size:20px; }
+    .proof-band { background:var(--cream); padding:30px 0; border-bottom:1px solid var(--line); }
+    .proof-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+    .proof-grid strong { display:block; color:var(--navy); font-size:29px; font-weight:800; }
+    .proof-grid span { color:var(--slate); font-size:14px; }
+    .deliverables { display:grid; grid-template-columns:repeat(2,1fr); gap:1px; margin-top:34px; background:var(--line); border:1px solid var(--line); }
+    .deliverable { background:var(--paper); padding:25px; }
+    .deliverable b { display:block; margin-bottom:5px; font-size:18px; font-weight:800; }
+    .deliverable p { color:var(--slate); font-size:14px; }
+    .investment { background:#edf0f4; }
+    .pricing { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; margin-top:36px; align-items:stretch; }
+    .price-card { padding:32px; border:1px solid #c8cdd7; background:var(--paper); display:flex; flex-direction:column; }
+    .price-card.featured { background:var(--navy); border-color:var(--navy); color:#fff; }
+    .price-card .tag { color:var(--gold-dark); font-size:11px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; margin-bottom:8px; }
+    .price-card.featured .tag, .closing .section-label { color:var(--gold); }
+    .price-card h3 { font-size:29px; }
+    .price { font-size:47px; font-weight:800; margin:15px 0 2px; letter-spacing:-.04em; }
+    .price-note { color:var(--slate); font-size:13px; min-height:39px; }
+    .price-card.featured h3, .price-card.featured .price { color:#fff; }
+    .price-card.featured .price-note, .price-card.featured li { color:#f5f7fb; }
+    .price-card ul { list-style:none; margin:23px 0 28px; }
+    .price-card li { color:var(--slate); padding:7px 0 7px 21px; position:relative; font-size:14px; }
+    .price-card li:before { content:"✓"; position:absolute; left:0; color:var(--gold); font-weight:700; }
+    .price-card .button { margin-top:auto; align-self:flex-start; }
+    .faq { max-width:760px; margin:35px auto 0; }
+    details { padding:19px 0; border-bottom:1px solid var(--line); }
+    summary { cursor:pointer; font-size:18px; font-weight:800; list-style:none; padding-right:28px; position:relative; }
+    summary::-webkit-details-marker { display:none; }
+    summary:after { content:"+"; color:var(--gold-dark); position:absolute; right:2px; top:-3px; font-size:26px; }
+    details[open] summary:after { content:"−"; }
+    details p { color:var(--slate); font-size:15px; padding-top:11px; max-width:700px; }
+    .closing { background:var(--navy); color:white; padding:84px 0; text-align:center; }
+    .closing h2 { max-width:720px; margin:auto; }
+    .closing p { max-width:570px; margin:19px auto 29px; color:#cbd2e0; }
+    .checkout-modal { position:fixed; inset:0; z-index:100; display:none; place-items:center; padding:22px; background:rgba(5,13,25,.82); backdrop-filter:blur(7px); }
+    .checkout-modal.is-open { display:grid; }
+    .checkout-dialog { width:min(100%,560px); max-height:calc(100vh - 44px); overflow:auto; position:relative; border-radius:16px; background:#fff; box-shadow:0 24px 70px rgba(0,0,0,.45); }
+    .checkout-close { position:absolute; z-index:2; top:12px; right:12px; width:38px; height:38px; border:0; border-radius:50%; background:#fff; color:var(--navy); font-size:27px; line-height:1; cursor:pointer; box-shadow:0 2px 10px rgba(0,0,0,.15); }
+    .checkout-shell { min-height:620px; padding:12px; }
+    .checkout-loading { min-height:596px; display:grid; place-items:center; color:var(--slate); font-weight:600; }
+    body.checkout-open { overflow:hidden; }
+    footer { background:#0b1530; color:#aab3c7; padding:25px 0; font-size:12px; }
+    footer .container { display:flex; justify-content:space-between; gap:15px; }
+    @media (max-width:650px) { .announcement .container { min-height:64px; gap:12px; flex-wrap:wrap; padding:10px 0; } .top-detail:last-child { display:none; } .hero { padding:64px 0 70px; } .section,.intro { padding:58px 0; } .who-grid,.pricing { grid-template-columns:1fr; gap:34px; } .proof-grid { grid-template-columns:1fr; gap:16px; } .deliverables { grid-template-columns:1fr; } .button.alt { margin:12px 0 0; } footer .container { flex-direction:column; } }
+  </style>
+</head>
+<body>
+  <header class="announcement">
+    <div class="container">
+      <a class="brand" href="#top">Executive Risk Authority<sup>™</sup></a>
+      <span class="top-detail">⚡ 4-day live workshop</span>
+      <span class="top-detail">Limited seats available</span>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">A four-day live working session for risk leaders</p>
+        <h1>How Senior Cybersecurity Professionals Can <span class="hl">Land an Executive Role in 2026</span></h1>
+        <p class="hero-copy">A four-day live workshop for risk, compliance, audit, and security leaders who are ready to shape decisions—not just report on them.</p>
+        <div class="hero-format"><span>Live online workshop</span>4 sessions · 90 minutes each · bring a live leadership issue</div>
+        <div class="hero-trust"><span><b>✓</b>Four live sessions</span><span><b>✓</b>Student Lab Workbook</span><span><b>✓</b>All-Access replays available</span></div>
+        <a class="button" href="#register">Reserve My Seat ($47)</a><a class="button alt" href="#register">Get All-Access ($99)</a>
+      </div>
+    </section>
+
+    <section class="proof-band">
+      <div class="container proof-grid">
+        <div><strong>4</strong><span>live working sessions</span></div>
+        <div><strong>1</strong><span>current leadership issue, brought into the room</span></div>
+        <div><strong>90</strong><span>days of practical authority-building action</span></div>
+      </div>
+    </section>
+
+    <section class="intro container">
+      <p>You have the certifications. You have the years. You are still not always in the room when the decision gets made.</p>
+      <p class="support">That is the Perception Gap — the distance between being technically qualified and being experienced as someone who can advise at the executive level.</p>
+      <aside class="callout">This is not a certification. It is not a TED Talk. Day 4 is a decision session, not a hard close.</aside>
+    </section>
+
+    <section class="section" id="four-days">
+      <div class="container">
+        <p class="section-label">The four days</p>
+        <h2>What we will actually do</h2>
+        <div class="agenda">
+          <article class="day"><div class="day-number">01</div><div><p class="timing">75 minutes · Live workshop</p><h3>The Perception Gap</h3><p>Why leadership trusts you with the work and still leaves you out of the decision. You will name the gap in your own language — and the habit of leading with the recommendation.</p><span class="outcome">Leave with: your executive-value diagnosis →</span></div></article>
+          <article class="day"><div class="day-number">02</div><div><p class="timing">75 minutes · Bring a live issue</p><h3>Translate Risk Into a Decision</h3><p>Use a live business issue to turn analysis, exposure, and controls into the trade-offs a leadership team can actually act on. Clear stakes. Clear recommendation. Clear next move.</p><span class="outcome">Leave with: a decision-ready executive brief →</span></div></article>
+          <article class="day"><div class="day-number">03</div><div><p class="timing">75 minutes · Live workshop</p><h3>Build Your Authority Plan</h3><p>Choose the one influence shift that will matter most in the next 90 days. You will turn the work from the first two sessions into a practical plan for how you show up, speak up, and follow through.</p><span class="outcome">Leave with: a 90-day authority plan →</span></div></article>
+          <article class="day"><div class="day-number">04</div><div><p class="timing">90 minutes · Decision session</p><h3>Make the Move</h3><p>Bring your completed plan into a final decision room. You will see the Executive Risk Authority founding cohort, decide whether it fits, and leave with a clear next step either way.</p><span class="outcome">Leave with: your committed next move →</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container who-grid">
+        <div><p class="section-label">Who this is for</p><h2>You do not need more expertise. You need your expertise to land differently.</h2><p>Built for experienced risk, compliance, audit, and security leaders who want a more strategic role in the conversations shaping the business.</p></div>
+        <ul class="checklist"><li>You are trusted to identify risk, but not always asked to shape the response.</li><li>You want to communicate uncertainty without sounding vague or alarmist.</li><li>You are ready to move from reporting risk to influencing decisions.</li><li>You can bring one real, current leadership challenge to the room.</li></ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-label">Working assets, not theory</p>
+        <h2>What you will leave with</h2>
+        <div class="deliverables">
+          <article class="deliverable"><b>Executive-value diagnosis</b><p>Name the perception gap between your current contribution and the influence you want to hold.</p></article>
+          <article class="deliverable"><b>Decision-ready risk brief</b><p>Turn a live risk issue into stakes, trade-offs, and a recommendation leadership can use.</p></article>
+          <article class="deliverable"><b>90-day authority plan</b><p>Choose the meetings, messages, and moments that will build credible executive visibility.</p></article>
+          <article class="deliverable"><b>Final decision framework</b><p>Know your next move and how to put the work into practice in the leadership conversations ahead.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section investment" id="register">
+      <div class="container">
+        <p class="section-label">Choose your access</p>
+        <h2>Pick the level of support that fits.</h2>
+        <div class="pricing">
+          <article class="price-card">
+            <p class="tag">Live attendance</p><h3>Live Pass</h3>
+            <p class="price">$47</p><p class="price-note">Four live working sessions for leaders ready to strengthen how their expertise lands.</p>
+            <ul><li>All four live workshop sessions</li><li>Live Q&amp;A with the instructor</li><li>Student Lab Workbook</li><li>90-minute live session each day</li></ul>
+            <a class="button checkout-trigger" href="#checkout" data-whop-plan="plan_7xYjfM2CnH9Hd" data-checkout-label="Executive Risk Authority — Live Pass">Join Now</a>
+          </article>
+          <article class="price-card featured">
+            <p class="tag">Best value</p><h3>All-Access</h3>
+            <p class="price">$99</p><p class="price-note">Live participation, lifetime replays, and the complete working-resource library.</p>
+            <ul><li>Everything in the Live Pass</li><li>Unlimited workshop replay access</li><li>Private participant community access</li><li>Executive Risk Brief template</li><li>Decision-ready recommendation scorecard</li><li>Workshop slide deck and 90-day Authority Plan</li></ul>
+            <a class="button checkout-trigger" href="#checkout" data-whop-plan="plan_gFCFjIPtKxnPa" data-checkout-label="Executive Risk Authority — All-Access">Join Now</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container"><p class="section-label">Questions, answered</p><h2>Before you take your seat</h2>
+        <div class="faq">
+          <details><summary>Who is this for?</summary><p>Experienced risk, compliance, audit, and security professionals who are ready to influence business decisions, not simply report on risk.</p></details>
+          <details><summary>What is the difference between Live Pass and All-Access?</summary><p>Live Pass includes all four live sessions, Q&amp;A, the workbook, and community access. All-Access adds unlimited replays and the full library of decision-ready templates and planning tools.</p></details>
+          <details><summary>What should I bring?</summary><p>Bring one current leadership issue, risk conversation, or decision that matters. You will use it during the workshops.</p></details>
+          <details><summary>What if I cannot attend every live session?</summary><p>Choose All-Access. You will receive unlimited access to the workshop replays and the complete resource library.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="container">
+        <p class="section-label">Paid live workshop · Limited room</p>
+        <h2>Four days to change how your leadership team experiences you.</h2>
+        <p>Bring your thinking, a live issue, and the willingness to be direct. The room is intentionally small.</p>
+        <a class="button" href="#register">Choose Your Access</a>
+      </div>
+    </section>
+  </main>
+  <div class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-label="Secure checkout" aria-hidden="true">
+    <div class="checkout-dialog" role="document">
+      <button class="checkout-close" type="button" aria-label="Close checkout">×</button>
+      <div class="checkout-shell" id="checkoutShell"></div>
+    </div>
+  </div>
+  <footer><div class="container"><span>© 2026 Executive Risk Authority™</span><span>Risk leadership for the decision room.</span></div></footer>
+  <script>
+    (() => {
+      const modal = document.getElementById('checkoutModal');
+      const shell = document.getElementById('checkoutShell');
+      let whopLoader;
+      const loadWhopCheckout = () => {
+        if (window.wco && window.wco.listening) return Promise.resolve();
+        if (whopLoader) return whopLoader;
+        whopLoader = new Promise((resolve, reject) => {
+          const startCheckout = () => {
+            // Whop's loader exposes this initializer; calling it loads the
+            // checkout runtime, which mounts the selected plan in the modal.
+            if (typeof window.wco === 'function') window.wco = window.wco();
+            const startedAt = Date.now();
+            const waitForCheckout = () => {
+              if (window.wco && window.wco.listening) return resolve();
+              if (Date.now() - startedAt > 10000) return reject(new Error('Checkout did not load'));
+              window.setTimeout(waitForCheckout, 50);
+            };
+            waitForCheckout();
+          };
+          if (window.wco) return startCheckout();
+          const loader = document.createElement('script');
+          loader.src = 'https://js.whop.com/static/checkout/loader.js';
+          loader.async = true;
+          loader.onload = startCheckout;
+          loader.onerror = () => reject(new Error('Checkout loader failed'));
+          document.head.appendChild(loader);
+        });
+        return whopLoader;
+      };
+      const close = () => {
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('checkout-open');
+        shell.replaceChildren();
+      };
+      document.querySelectorAll('.checkout-trigger').forEach(button => {
+        button.addEventListener('click', event => {
+          event.preventDefault();
+          shell.innerHTML = '<p class="checkout-loading">Loading secure checkout…</p>';
+          modal.classList.add('is-open');
+          modal.setAttribute('aria-hidden', 'false');
+          document.body.classList.add('checkout-open');
+          const checkout = document.createElement('div');
+          checkout.className = 'whop-checkout-embed';
+          checkout.setAttribute('data-whop-checkout-plan-id', button.dataset.whopPlan);
+          checkout.setAttribute('data-whop-checkout-theme', 'light');
+          checkout.setAttribute('aria-label', button.dataset.checkoutLabel);
+          shell.replaceChildren(checkout);
+          loadWhopCheckout().catch(() => {
+            shell.innerHTML = '<p class="checkout-loading">Checkout could not load. Please close this window and try again.</p>';
+          });
+        });
+      });
+      modal.querySelector('.checkout-close').addEventListener('click', close);
+      modal.addEventListener('click', event => { if (event.target === modal) close(); });
+      document.addEventListener('keydown', event => { if (event.key === 'Escape' && modal.classList.contains('is-open')) close(); });
+    })();
+  </script>
+</body>
+</html>
